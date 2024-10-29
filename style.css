@@ -1,0 +1,59 @@
+body{
+  background: url(483251.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#myH1{
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  font-size: 50px;
+}
+#box, #box2{
+  display: flex;
+  justify-content: center;
+}
+#signUp, #welcome{
+  border: 2px solid blue;
+  padding: 50px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+#signUp input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0.529), rgba(255, 0, 0, 0.647));
+}
+#signUp button, #next{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: linear-gradient(-45deg, blue, red);
+  color: white;
+}
+#welcome{
+  text-align: center;
+  color: blue;
+}
+#box2{
+  display: none;
+  animation: 1s fadeIn;
+}
+p{
+  color: white;
+}
+ul{
+  list-style: none;
+  color: white;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

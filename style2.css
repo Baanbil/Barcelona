@@ -1,0 +1,56 @@
+body{
+  transition: background 1s;
+  background: linear-gradient(-45deg, blue, red);
+  background-attachment: fixed;
+}
+#change{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  z-index: 100;
+}
+#change input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  transition: background 1s;
+  color: yellow;
+}
+#change button{
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid red;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0.529), rgba(255, 0, 0, 0.647))
+}
+#img{
+  width: 300px;
+  border: 2px solid blue;
+  backdrop-filter: blur(2px);
+}
+#img img{
+  width: 100%;
+}
+img video{
+  width: 400px;
+
+}
+#img-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+@media(max-width: 720px){
+  #img-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 414px){
+  #img-grid{
+    grid-template-columns: 1fr;
+  }
+}
